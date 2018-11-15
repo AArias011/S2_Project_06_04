@@ -13,6 +13,8 @@
 
 */
 
+
+
 /* HTML styles */
 html {
     background: url(br_paper.png) fixed center;
@@ -28,17 +30,18 @@ body {
     min-width: 640px;
     width: 95%;
 
+
 }
 
 article {
-    float: right;
+    clear: both;
     font-size: 1.3em;
-
 }
 
 article h1 {
     text-align: center;
 }
+
 
 /* Navigation Styles */
 ul.firstNav li {
@@ -50,7 +53,117 @@ ul.firstNav li {
     font-size: 1.2em;
 }
 
-nav li a {}
+nav>ul>li>a:visited,
+nav>ul>li>a:link {
+    color: blue;
+}
+
+nav>ul>li>a:active,
+nav>ul>li>a:hover {
+    color: black;
+}
 
 /* Aside Styles */
 body aside ul {}
+
+
+
+/* Blockquote Styles */
+.secondNav {
+    line-height: 30px;
+    border: 10px double black;
+    border-radius: 40px;
+    box-shadow: rgb(46, 45, 45) 0px 0px 20px 10px;
+    padding: 20px;
+    background: radial-gradient(white, rgba(255, 225, 187, 0.658), rgb(134, 113, 113));
+    background-color: rgba(255, 225, 187, 0.658);
+    content: "";
+    display: table;
+    clear: both;
+    float: right;
+}
+
+aside>ul>li>a:visited,
+aside>ul>li>a:link {
+    color: black;
+    text-decoration: none;
+}
+
+aside>ul>li>a:active,
+aside>ul>li>a:hover {
+    color: blue;
+}
+
+
+/* Image Styles */
+article.pics img {
+    float: left;
+    width: 33.33%;
+}
+
+#pic1 {
+    transform: translateY(38px);
+
+}
+
+#pic2 {
+    transform: translateY(19px);
+}
+
+
+
+#pic4 {
+    transform: translateY(38px);
+}
+
+#pic5 {
+    transform: translateY(19px);
+}
+
+
+
+#pic7 {
+    transform: translateY(38px);
+}
+
+#pic8 {
+    transform: translateY(19px);
+}
+
+/* Figcaption Styles */
+#fig1 {
+    transform: translateY(20px);
+}
+
+#fig2 {
+    transform: translateY(0px);
+}
+
+#fig3 {
+    transform: translateY(-20px);
+}
+
+#fig4 {
+    transform: translateY(20px);
+}
+
+#fig5 {
+    transform: translateY(0px);
+}
+
+#fig6 {
+    transform: translateY(-20px);
+}
+
+#fig7 {
+    transform: translateY(20px);
+}
+
+#fig8 {
+    transform: translateY(0px);
+}
+
+#fig9 {
+    transform: translateY(-20px);
+
+}
