@@ -14,8 +14,15 @@
 */
 
 
+/* Header Styles */
+/* This set of code gives the image thats in the header a black drop shadow. */
+header img {
+    filter: drop-shadow(rgba(0, 0, 0, 0.5)-2px 0 0.5px);
+    -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.5)-2px 0 0.5px);
+}
 
 /* HTML styles */
+/* This set of code sets the background of the whole page to a certain image you give it.  */
 html {
     background: url(br_paper.png) fixed center;
 
@@ -23,27 +30,31 @@ html {
 
 
 /* Body Styles */
+/* This set of code gives the body a margin left and right to auto, a max and min width of 960px and 640 px. And lastly a width of 95%. */
 body {
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
     min-width: 640px;
     width: 95%;
-
-
 }
 
+/* This set of code sets the article to clear both sides and it gives it a font-size of 1.3 em. */
 article {
     clear: both;
     font-size: 1.3em;
 }
 
+/* This sets the h1 of the article to align the text to center, it gives it a font size of 1.3em and gives it a grey text shadow. */
 article h1 {
     text-align: center;
+    font-size: 1.3em;
+    text-shadow: rgb(181, 184, 211) 2px 2px 1px, rgba(21, 21, 21, 0.66) 5px 5px 25px;
 }
 
 
 /* Navigation Styles */
+/* This set of code sets the list of the unordered list to align in the center, float left, have and overflow of hidden, have a width of 20%, have a padding to the bottom of 30px, and a font size of 1.2em. */
 ul.firstNav li {
     text-align: center;
     float: left;
@@ -53,27 +64,47 @@ ul.firstNav li {
     font-size: 1.2em;
 }
 
+/* This sets the hypertext link thats in the list thats in the unordered list thats in the nav to have a text color of blue. */
 nav>ul>li>a:visited,
 nav>ul>li>a:link {
     color: blue;
 }
 
+/* This sets the hypertext link thats in the list thats in the unordered list thats in the nav to have a text color of black when you hover over it. */
 nav>ul>li>a:active,
 nav>ul>li>a:hover {
     color: black;
 }
 
-/* Aside Styles */
-body aside ul {}
+/* Footer Styles */
+/* This sets the class of listingDes to have a line height, border, border radius, box-shadow, padding, background, background color, content, display, clear and float. */
+.listingDes {
+    line-height: 30px;
+    border: 10px double black;
+    border-radius: 40px;
+    box-shadow: rgb(90, 89, 89) 0px 0px 20px 10px;
+    padding: 20px;
 
+    background: radial-gradient(white, rgba(255, 225, 187, 0.658), rgb(134, 113, 113));
+    background-color: rgba(255, 225, 187, 0.658);
+    content: "";
+    display: table;
+    clear: both;
+    float: left;
+}
 
+/* This set of code sets the footer to translate on the y axis by 2em.  */
+footer {
+    transform: translateY(2em);
+}
 
 /* Blockquote Styles */
+/* This sets the class of secondNav to have a line height, border, border radius, box-shadow, padding, background, background color, content, display, clear and float. */
 .secondNav {
     line-height: 30px;
     border: 10px double black;
     border-radius: 40px;
-    box-shadow: rgb(46, 45, 45) 0px 0px 20px 10px;
+    box-shadow: rgb(90, 89, 89) 0px 0px 20px 10px;
     padding: 20px;
     background: radial-gradient(white, rgba(255, 225, 187, 0.658), rgb(134, 113, 113));
     background-color: rgba(255, 225, 187, 0.658);
@@ -83,12 +114,14 @@ body aside ul {}
     float: right;
 }
 
+/* This sets the hypertext link thats in the list thats in the unordered list thats in the nav to have a text color of black. */
 aside>ul>li>a:visited,
 aside>ul>li>a:link {
     color: black;
     text-decoration: none;
 }
 
+/* This sets the hypertext link thats in the list thats in the unordered list thats in the nav to have a text color of black when you hover over it. */
 aside>ul>li>a:active,
 aside>ul>li>a:hover {
     color: blue;
@@ -96,73 +129,87 @@ aside>ul>li>a:hover {
 
 
 /* Image Styles */
+/* This sets the image thats in the article with the class of pics to have a width of 33.33% and float left. */
 article.pics img {
     float: left;
     width: 33.33%;
 }
 
+/* This set of code sets an id of pic1 to translate 38px. */
 #pic1 {
     transform: translateY(38px);
 
 }
 
+/* This set of code sets an id of pic2 to translate 19px. */
 #pic2 {
     transform: translateY(19px);
 }
 
 
-
+/* This set of code sets an id of pic1 to translate 38px. */
 #pic4 {
     transform: translateY(38px);
 }
 
+/* This set of code sets an id of pic1 to translate 19px. */
 #pic5 {
     transform: translateY(19px);
 }
 
 
-
+/* This set of code sets an id of pic1 to translate 38px. */
 #pic7 {
     transform: translateY(38px);
 }
 
+/* This set of code sets an id of pic1 to translate 19px. */
 #pic8 {
     transform: translateY(19px);
 }
 
 /* Figcaption Styles */
+/* This set of code sets an id of fig1 to translate 20px. */
 #fig1 {
     transform: translateY(20px);
 }
 
+/* This set of code sets an id of fig2 to translate 0px. */
 #fig2 {
     transform: translateY(0px);
 }
 
+/* This set of code sets an id of fig3 to translate -20px. */
 #fig3 {
     transform: translateY(-20px);
 }
 
+/* This set of code sets an id of fig4 to translate 20px. */
 #fig4 {
     transform: translateY(20px);
 }
 
+/* This set of code sets an id of fig5 to translate 0px. */
 #fig5 {
     transform: translateY(0px);
 }
 
+/* This set of code sets an id of fig6 to translate -20px. */
 #fig6 {
     transform: translateY(-20px);
 }
 
+/* This set of code sets an id of fig7 to translate 20px. */
 #fig7 {
     transform: translateY(20px);
 }
 
+/* This set of code sets an id of fig8 to translate 0px. */
 #fig8 {
     transform: translateY(0px);
 }
 
+/* This set of code sets an id of fig9 to translate -20px. */
 #fig9 {
     transform: translateY(-20px);
 
